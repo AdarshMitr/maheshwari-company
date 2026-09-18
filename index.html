@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maheshwari Co. | Authorised Hindalco & NALCO Aluminium Stockist</title>
+    <meta name="description" content="Maheshwari Co. is an authorised stockist of Hindalco and NALCO supplying industrial aluminium extrusions, sheets, plates, and coils across India.">
+    <link rel="icon" type="image/png" href="MCO_logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#162544',
+                            gold: '#F89B1C',
+                            black: '#080C14',
+                            gray: '#E2E4E6',
+                            white: '#FFFFFF'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-brand-gray/30 text-brand-black font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="w-full sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-gray shadow-sm">
+        <div class="bg-brand-navy text-slate-300 text-xs sm:text-sm py-2 px-4 sm:px-8 flex flex-wrap justify-between items-center border-b border-slate-800">
+            <div class="flex items-center gap-6">
+                <span class="hidden md:flex items-center gap-1.5"><i data-lucide="award" class="w-4 h-4 text-brand-gold"></i> Authorised Hindalco & NALCO Stockist</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="tel:+919891300031" class="hover:text-brand-gold flex items-center gap-1.5 transition">
+                    <i data-lucide="phone" class="w-4 h-4 text-brand-gold"></i> +91-9891300031
+                </a>
+                <a href="mailto:bkbhuraria@hotmail.com" class="hidden sm:flex items-center gap-1.5 hover:text-brand-gold transition">
+                    <i data-lucide="mail" class="w-4 h-4 text-brand-gold"></i> bkbhuraria@hotmail.com
+                </a>
+            </div>
+        </div>
+
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="MCO_logo.png" alt="Maheshwari Co." class="h-12 w-auto object-contain">
+                <div>
+                    <span class="font-extrabold text-xl text-brand-navy tracking-tight block leading-tight">MAHESHWARI CO.</span>
+                    <span class="text-[10px] uppercase font-bold text-brand-gold tracking-widest block">Aluminium Products</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-7 font-medium text-slate-700 text-sm">
+                <a href="index.html" class="text-brand-navy font-bold border-b-2 border-brand-gold pb-1">Home</a>
+                <a href="about.html" class="hover:text-brand-navy transition pb-1">About Us</a>
+                <a href="products.html" class="hover:text-brand-navy transition pb-1">Products</a>
+                <a href="catalogues.html" class="hover:text-brand-navy transition pb-1">PDF Catalogues</a>
+                <a href="tech-specs.html" class="hover:text-brand-navy transition pb-1">Technical Specs</a>
+                <a href="blogs.html" class="hover:text-brand-navy transition pb-1">Blogs</a>
+                <a href="contact.html" class="hover:text-brand-navy transition pb-1">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center">
+                <a href="contact.html" class="bg-brand-gold hover:bg-amber-600 text-brand-black font-bold text-sm px-5 py-2.5 rounded-lg transition shadow-md flex items-center gap-2">
+                    <i data-lucide="message-square" class="w-4 h-4"></i> Get Inquiry Quote
+                </a>
+            </div>
+
+            <!-- Hamburger Button (Mobile View) -->
+            <button id="mobile-menu-btn" type="button" class="md:hidden p-2 rounded-lg text-brand-navy hover:bg-slate-100 focus:outline-none transition" aria-label="Toggle Navigation Menu">
+                <i id="menu-icon" data-lucide="menu" class="w-7 h-7"></i>
+                <i id="close-icon" data-lucide="x" class="w-7 h-7 hidden"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-brand-gray px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="index.html" class="block py-2 text-brand-navy font-bold border-l-4 border-brand-gold pl-3 bg-amber-50/50 rounded-r-md">Home</a>
+            <a href="about.html" class="block py-2 text-slate-700 hover:text-brand-navy font-medium border-l-4 border-transparent hover:border-brand-gold pl-3 transition">About Us</a>
+            <a href="products.html" class="block py-2 text-slate-700 hover:text-brand-navy font-medium border-l-4 border-transparent hover:border-brand-gold pl-3 transition">Products</a>
+            <a href="catalogues.html" class="block py-2 text-slate-700 hover:text-brand-navy font-medium border-l-4 border-transparent hover:border-brand-gold pl-3 transition">PDF Catalogues</a>
+            <a href="tech-specs.html" class="block py-2 text-slate-700 hover:text-brand-navy font-medium border-l-4 border-transparent hover:border-brand-gold pl-3 transition">Technical Specs</a>
+            <a href="blogs.html" class="block py-2 text-slate-700 hover:text-brand-navy font-medium border-l-4 border-transparent hover:border-brand-gold pl-3 transition">Blogs</a>
+            <a href="contact.html" class="block py-2 text-slate-700 hover:text-brand-navy font-medium border-l-4 border-transparent hover:border-brand-gold pl-3 transition">Contact</a>
+            <div class="pt-2">
+                <a href="contact.html" class="w-full bg-brand-gold hover:bg-amber-600 text-brand-black font-bold text-sm py-3 rounded-lg transition shadow-md flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" class="w-4 h-4"></i> Get Inquiry Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Carousel Section -->
+    <section class="relative bg-brand-navy overflow-hidden border-b-4 border-brand-gold">
+        <div id="carousel-slides" class="relative min-h-[520px] lg:min-h-[580px] flex items-center">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-slide active absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent z-10"></div>
+                <img src="img/mco-extrusion.png?auto=format&fit=crop&w=1600&q=80" alt="Engineered Extrusions & Industrial Aluminium" class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+                    <div class="max-w-2xl space-y-6">
+                        <span class="inline-block bg-brand-gold/20 text-brand-gold border border-brand-gold/40 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest">
+                           Available in Grades 6061/6063/6082/6101 etc.
+                        </span>
+                        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                            Engineered Extrusions for Industrial Application. 
+                        </h1>
+                        <p class="text-brand-gray text-base sm:text-lg leading-relaxed">
+                            Supplying precision alloy profiles, structural channels, architectural sections- Rods,Tubes,Flats across India. High conductivity (>61% IACS) Bus Bars for Control Panels.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="catalogues.html" class="bg-brand-gold hover:bg-amber-600 text-brand-black font-bold text-sm px-6 py-3.5 rounded-xl transition shadow-lg flex items-center gap-2">
+                                Browse Catalogue <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                            <a href="contact.html" class="bg-slate-800/80 hover:bg-slate-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl border border-slate-600 backdrop-blur-sm transition flex items-center gap-2">
+                                Request Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none flex items-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent z-10"></div>
+                <img src="img/mco-sheets-coils.png?auto=format&fit=crop&w=1600&q=80" alt="Aluminium Sheets & Coils" class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+                    <div class="max-w-2xl space-y-6">
+                        <span class="inline-block bg-brand-gold/20 text-brand-gold border border-brand-gold/40 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest">
+                            Available in Alloy-10xx/8011/1200/3xxx/5xxx etc.
+                        </span>
+                        <h2 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                            For Insulation Cladding in various Industrial Applications
+                        </h2>
+                        
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="tech-specs.html" class="bg-brand-gold hover:bg-amber-600 text-brand-black font-bold text-sm px-6 py-3.5 rounded-xl transition shadow-lg flex items-center gap-2">
+                                Technical Specs <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide absolute inset-0 transition-opacity duration-700 opacity-0 pointer-events-none flex items-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/90 to-transparent z-10"></div>
+                <img src="img/mco-louvers-facade.png" alt="Aluminium Louvers for Facade" class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+                    <div class="max-w-2xl space-y-6">
+                        <span class="inline-block bg-brand-gold/20 text-brand-gold border border-brand-gold/40 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest">
+                            Facade,Wall Panel and Gate Profile
+                        </span>
+                        <h2 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                            Aluminium Louvers for Facade
+                        </h2>
+                        <p class="text-brand-gray text-base sm:text-lg leading-relaxed">
+                            A wide range of Aluminium louvers for Facade.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-2">
+                            <a href="#" class="bg-brand-gold hover:bg-amber-600 text-brand-black font-bold text-sm px-6 py-3.5 rounded-xl transition shadow-lg flex items-center gap-2">
+                                View Gallery <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <button id="prev-slide" class="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-slate-900/60 text-white hover:bg-brand-gold hover:text-brand-black transition border border-slate-700">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        </button>
+        <button id="next-slide" class="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2.5 rounded-full bg-slate-900/60 text-white hover:bg-brand-gold hover:text-brand-black transition border border-slate-700">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Carousel Slide Indicators -->
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+            <button class="slide-indicator w-3 h-3 rounded-full bg-brand-gold" onclick="goToSlide(0)"></button>
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white/40 hover:bg-white" onclick="goToSlide(1)"></button>
+            <button class="slide-indicator w-3 h-3 rounded-full bg-white/40 hover:bg-white" onclick="goToSlide(2)"></button>
+        </div>
+    </section>
+
+    <!-- Restored Metrics/Stats Bar Section -->
+    <section class="bg-white py-10 border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+                <div class="text-center p-4">
+                    <span class="block text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">1978</span>
+                    <span class="block text-xs uppercase font-bold text-slate-500 mt-1 tracking-wider">Established Year</span>
+                </div>
+                <div class="text-center p-4">
+                    <span class="block text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">5,000+</span>
+                    <span class="block text-xs uppercase font-bold text-slate-500 mt-1 tracking-wider">Tons Ready Stock</span>
+                </div>
+                <div class="text-center p-4">
+                    <span class="block text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">ISO 9001</span>
+                    <span class="block text-xs uppercase font-bold text-slate-500 mt-1 tracking-wider">Certified Standard</span>
+                </div>
+                <div class="text-center p-4">
+                    <span class="block text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">HINDALCO,NALCO</span>
+                    <span class="block text-xs uppercase font-bold text-slate-500 mt-1 tracking-wider">Authorised Stockist</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Core Product Range Section -->
+    <section class="py-16 bg-brand-gray/20 border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <span class="inline-block bg-amber-100 text-brand-navy border border-amber-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                    CORE PRODUCT RANGE
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">
+                    Supplying High-Grade Metal Solutions
+                </h2>
+                <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
+                    Accurately sourced from primary producers to fulfill industrial, construction, and engineering needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-2xl border border-brand-gray shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-100">
+                            <img src="img/product-extrusions.png?auto=format&fit=crop&w=600&q=80" alt="Architectural Profiles" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 right-3 bg-brand-navy/80 text-brand-gold text-[10px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">6063 / 6061</div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-bold text-brand-navy text-lg">Architectural Profiles</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Architectural and structural extrusions including Equal/Unequal angles, channels, Rectangular/Square tubes, and custom die sections in 6063/6061 alloys.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="products.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1.5 transition">
+                            View Architectural Profiles <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white rounded-2xl border border-brand-gray shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-100">
+                            <img src="img/product-sheets-coils.png?auto=format&fit=crop&w=600&q=80" alt="Rolled Sheets & Plates" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 right-3 bg-brand-navy/80 text-brand-gold text-[10px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">8011/1200/3105/6061-T6</div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-bold text-brand-navy text-lg">Rolled Sheets,Coils & Plates</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Hot and cold rolled sheets, tooling plates, and chequered plates in commercial 1050/1100, marine 5083/5052, and high-tensile 6061-T6 alloys.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="products.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1.5 transition">
+                            View Sheet Range <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white rounded-2xl border border-brand-gray shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Bus Bars,Flats & Rods" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 right-3 bg-brand-navy/80 text-brand-gold text-[10px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">&gt; 61% IACS</div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-bold text-brand-navy text-lg">Bus Bars,Flats & Rods</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                EC grade strips(6101) are used in control panels for power distribution in Industrial and commercial settings.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="products.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1.5 transition">
+                            View Range <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-white rounded-2xl border border-brand-gray shadow-sm hover:shadow-md transition overflow-hidden flex flex-col justify-between group">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-slate-100">
+                            <img src="img/product-louver.png?auto=format&fit=crop&w=600&q=80" alt="Louvers for Wall Panel & Facade" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <div class="absolute top-3 right-3 bg-brand-navy/80 text-brand-gold text-[10px] font-bold px-2.5 py-1 rounded-md backdrop-blur-sm">PDF Downloads</div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <h3 class="font-bold text-brand-navy text-lg">Louvers(Wall Panel) Profiles</h3>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Download comprehensive profiles for louvers/wall panels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="catalogues.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1.5 transition">
+                            Download PDFs <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Latest Blogs & Engineering Guides Section -->
+    <section class="py-16 bg-white border-b border-brand-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-slate-100 pb-6">
+                <div>
+                    <span class="text-brand-gold text-xs font-bold uppercase tracking-widest block mb-1">Technical Resource Center</span>
+                    <h2 class="text-3xl font-extrabold text-brand-navy">Latest Blogs & Engineering Guides</h2>
+                </div>
+                <a href="blogs.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1.5 transition shrink-0">
+                    View All Articles <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article Preview 1 -->
+                <article class="bg-slate-50 rounded-2xl border border-brand-gray p-6 flex flex-col justify-between hover:shadow-md transition">
+                    <div class="space-y-3">
+                        <span class="bg-brand-gold/20 text-brand-navy text-[11px] font-bold px-2.5 py-0.5 rounded uppercase">Featured</span>
+                        <h3 class="font-bold text-brand-navy text-base leading-snug">
+                            Understanding 6061 vs 6063 Aluminium Alloys
+                        </h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            A metallurgical selection guide detailing load capacity, yield strength, and finishing properties.
+                        </p>
+                    </div>
+                    <a href="blog-6061-vs-6063.html" class="mt-6 text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1">
+                        Read Guide <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </article>
+
+                <!-- Article Preview 2 -->
+                <article class="bg-slate-50 rounded-2xl border border-brand-gray p-6 flex flex-col justify-between hover:shadow-md transition">
+                    <div class="space-y-3">
+                        <span class="bg-blue-50 text-blue-800 text-[11px] font-bold px-2.5 py-0.5 rounded uppercase">Heat Treatment</span>
+                        <h3 class="font-bold text-brand-navy text-base leading-snug">
+                            How Heat Treatment (T4, T5, T6) Affects Extrusions
+                        </h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            How temper treatments modify tensile properties in structural aluminium profiles.
+                        </p>
+                    </div>
+                    <a href="blog-heat-treatment-tempers.html" class="mt-6 text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1">
+                        Read Guide <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </article>
+
+                <!-- Article Preview 3 -->
+                <article class="bg-slate-50 rounded-2xl border border-brand-gray p-6 flex flex-col justify-between hover:shadow-md transition">
+                    <div class="space-y-3">
+                        <span class="bg-emerald-50 text-emerald-800 text-[11px] font-bold px-2.5 py-0.5 rounded uppercase">Electrical</span>
+                        <h3 class="font-bold text-brand-navy text-base leading-snug">
+                            High Conductivity Slit Coils for Transformer Windings
+                        </h3>
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            61% IACS minimum electrical conductivity and burr-free edge criteria for transformers.
+                        </p>
+                    </div>
+                    <a href="blog-transformer-coils.html" class="mt-6 text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1">
+                        Read Guide <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-black text-slate-400 text-sm py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+            <div class="lg:col-span-2 space-y-4">
+                <div class="flex items-center gap-3">
+                    <img src="MCO_logo.png" alt="Maheshwari Co." class="h-10 w-auto bg-white p-1 rounded">
+                    <span class="font-extrabold text-xl text-white">MAHESHWARI CO.</span>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Authorised distributors for Hindalco and NALCO industrial aluminium extrusions, sheets, plates, and electrical coils. ISO 9001:2008 certified quality assurance.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Quick Navigation</h3>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="hover:text-brand-gold">Home</a></li>
+                    <li><a href="about.html" class="hover:text-brand-gold">About Us</a></li>
+                    <li><a href="products.html" class="hover:text-brand-gold">Products</a></li>
+                    <li><a href="catalogues.html" class="hover:text-brand-gold">PDF Catalogues</a></li>
+                    <li><a href="tech-specs.html" class="hover:text-brand-gold">Technical Specs</a></li>
+                    <li><a href="blogs.html" class="hover:text-brand-gold text-brand-gold font-bold">Blogs</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-gold">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Blog Topics</h3>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="blog-6061-vs-6063.html" class="hover:text-brand-gold">6061 vs 6063 Alloy Guide</a></li>
+                    <li><a href="blog-heat-treatment-tempers.html" class="hover:text-brand-gold">T4 / T5 / T6 Temper Differences</a></li>
+                    <li><a href="blog-transformer-coils.html" class="hover:text-brand-gold">Transformer Slit Coils</a></li>
+                    <li><a href="blog-stockist-benefits.html" class="hover:text-brand-gold">Stockist Traceability</a></li>
+                    <li><a href="blog-corrosion-resistance.html" class="hover:text-brand-gold">Marine Grade Alloys</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-xs uppercase tracking-wider mb-4">Contact Info</h3>
+                <ul class="space-y-2 text-xs">
+                    <li>Phone: +91-9891300031</li>
+                    <li>Email: bkbhuraria@hotmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 mt-12 border-t border-slate-900 text-xs text-center text-slate-500">
+            <p>Copyright&copy; 2026 Maheshwari Co. All rights reserved. | Developed by <a href="https://github.com/AdarshMitr/" target="_blank" class="text-brand-gold hover:underline">AdarshMitr</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts: Mobile Menu, Carousel Logic & Lucide Icons -->
+    <script>
+        // Mobile Menu Toggle Script
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Carousel Script
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.slide-indicator');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.remove('opacity-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            indicators.forEach((ind, i) => {
+                if (i === index) {
+                    ind.classList.remove('bg-white/40');
+                    ind.classList.add('bg-brand-gold');
+                } else {
+                    ind.classList.remove('bg-brand-gold');
+                    ind.classList.add('bg-white/40');
+                }
+            });
+            currentSlide = index;
+        }
+
+        function goToSlide(index) {
+            showSlide(index);
+        }
+
+        document.getElementById('prev-slide').addEventListener('click', () => {
+            let prev = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prev);
+        });
+
+        document.getElementById('next-slide').addEventListener('click', () => {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        });
+
+        // Auto slide interval (Every 6 seconds)
+        setInterval(() => {
+            let next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        }, 6000);
+
+        window.onload = () => lucide.createIcons();
+    </script>
+</body>
+</html>
