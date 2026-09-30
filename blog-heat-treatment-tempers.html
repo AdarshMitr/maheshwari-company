@@ -3,33 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heat Treatment (T4, T5, T6) | Maheshwari Co.</title>
+    <title>How Heat Treatment (T4, T5, T6) Affects Extrusion Strength | Maheshwari Co.</title>
     <link rel="icon" type="image/png" href="MCO_logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = { theme: { extend: { colors: { brand: { navy: '#162544', gold: '#F89B1C', black: '#080C14', gray: '#E2E4E6' } } } } }</script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { navy: '#162544', gold: '#F89B1C', black: '#080C14', gray: '#E2E4E6' } } } } }
+    </script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-brand-gray/30 text-brand-black font-sans antialiased flex flex-col min-h-screen">
+
     <header class="w-full bg-white border-b border-brand-gray shadow-sm">
         <nav class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
-            <a href="index.html" class="font-extrabold text-xl text-brand-navy">MAHESHWARI CO.</a>
-            <div class="hidden md:flex space-x-6 text-sm font-medium"><a href="index.html">Home</a><a href="products.html">Products</a><a href="blogs.html" class="text-brand-navy font-bold">Blogs</a><a href="contact.html">Contact</a></div>
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="MCO_logo.png" alt="Maheshwari Co." class="h-10 w-auto">
+                <span class="font-extrabold text-xl text-brand-navy">MAHESHWARI CO.</span>
+            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-brand-gold transition">Home</a>
+                <a href="products.html" class="hover:text-brand-gold transition">Products</a>
+                <a href="blogs.html" class="text-brand-navy font-bold">Blogs</a>
+                <a href="contact.html" class="hover:text-brand-gold transition">Contact</a>
+            </div>
         </nav>
     </header>
+
     <main class="flex-grow py-12 max-w-4xl mx-auto px-4 sm:px-8">
-        <a href="blogs.html" class="inline-flex items-center gap-2 text-xs font-bold text-brand-navy hover:text-brand-gold mb-6"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blogs</a>
-        <article class="bg-white p-8 sm:p-12 rounded-2xl border border-brand-gray shadow-md space-y-6">
-            <span class="bg-blue-50 text-blue-800 text-xs font-bold px-3 py-1 rounded uppercase">Heat Treatment</span>
-            <h1 class="text-3xl font-extrabold text-brand-navy">How Heat Treatment (T4, T5, T6) Affects Extrusion Strength</h1>
-            <p class="text-xs text-slate-400">Published: August 2026 | Reading Time: 4 mins</p>
-            <p class="text-slate-700 text-sm border-t pt-6">Learn how artificial aging and solution heat treating change the mechanical tensile properties of custom aluminium extrusions.</p>
-            <div class="pt-6 border-t flex justify-between items-center">
-                <a href="blogs.html" class="text-xs font-bold text-brand-navy flex items-center gap-1"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog Index</a>
-                <a href="contact.html" class="bg-brand-gold text-brand-black text-xs font-bold px-4 py-2 rounded-lg">Get Technical Advice</a>
+        <a href="blogs.html" class="inline-flex items-center gap-2 text-xs font-bold text-brand-navy hover:text-brand-gold mb-6 transition">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blogs
+        </a>
+
+        <article class="bg-white p-8 sm:p-12 rounded-2xl border border-brand-gray shadow-md space-y-8">
+            <div>
+                <span class="bg-blue-50 text-blue-800 text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">Heat Treatment</span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-navy mt-3 leading-tight">How Heat Treatment (T4, T5, T6) Affects Extrusion Strength</h1>
+                <p class="text-xs text-slate-400 mt-2">Published: August 2026 | Reading Time: 5 mins</p>
+            </div>
+
+            <div class="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed border-t border-brand-gray/60 pt-6">
+                <p>In heat-treatable aluminum alloys like the popular 6000-series (such as 6061 and 6063), chemical composition is only half the strength equation. The post-extrusion heat treatment—designated by temper codes like <strong>T4</strong>, <strong>T5</strong>, and <strong>T6</strong>—fundamentally alters the metal's internal crystalline structure, determining its ultimate tensile strength, ductility, and hardness.</p>
+
+                <p>Understanding these temper designations ensures engineers and buyers select extrusions that match structural safety requirements without over-specifying processing costs.</p>
+
+                <!-- Comparison Table -->
+                <div class="overflow-x-auto my-8">
+                    <table class="w-full text-left border-collapse border border-brand-gray/80 text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-brand-navy text-white font-bold">
+                                <th class="p-3 sm:p-4 border border-brand-gray/20">Temper</th>
+                                <th class="p-3 sm:p-4 border border-brand-gray/20">Process Method</th>
+                                <th class="p-3 sm:p-4 border border-brand-gray/20">Tensile Strength</th>
+                                <th class="p-3 sm:p-4 border border-brand-gray/20">Formability</th>
+                                <th class="p-3 sm:p-4 border border-brand-gray/20">Best Used For</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-brand-gray/60 bg-slate-50/50">
+                            <tr>
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy border border-brand-gray/40">T4</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Solution heat-treated & naturally aged</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Moderate (~180 MPa)</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Highest / Excellent</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Bending, forming, post-shaping</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy border border-brand-gray/40">T5</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Cooled from extrusion & artificially aged</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Medium-High (~200 MPa)</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Moderate</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Architectural profiles, window frames</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy border border-brand-gray/40">T6</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Solution heat-treated & artificially aged</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Maximum (~310 MPa)</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Lower / Rigid</td>
+                                <td class="p-3 sm:p-4 border border-brand-gray/40">Heavy structural load applications</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section: T4 Temper -->
+                <div class="space-y-3">
+                    <h2 class="text-xl font-bold text-brand-navy flex items-center gap-2">
+                        <i data-lucide="flame" class="w-5 h-5 text-brand-gold"></i>
+                        T4 Temper: Maximum Formability
+                    </h2>
+                    <p>In the <strong>T4 temper</strong> process, aluminum extrusions are solution heat-treated at elevated temperatures (~520°C) to dissolve alloying elements evenly, rapidly quenched in water or air, and then allowed to age naturally at room temperature.</p>
+                    <ul class="list-disc pl-5 space-y-1 marker:text-brand-gold">
+                        <li><strong>Ductility:</strong> Retains high elongation, allowing severe bending, flanging, or cold-forming without cracking.</li>
+                        <li><strong>Trade-off:</strong> Lower yield strength compared to artificially aged tempers.</li>
+                    </ul>
+                </div>
+
+                <!-- Section: T5 Temper -->
+                <div class="space-y-3 pt-4">
+                    <h2 class="text-xl font-bold text-brand-navy flex items-center gap-2">
+                        <i data-lucide="zap" class="w-5 h-5 text-brand-gold"></i>
+                        T5 Temper: Precision & Architectural Balance
+                    </h2>
+                    <p><strong>T5 temper</strong> bypasses separate high-temperature solution heating. Instead, profiles are rapidly air-cooled directly as they exit the extrusion press die and then placed into aging ovens for <strong>artificial aging</strong> (precipitation hardening).</p>
+                    <ul class="list-disc pl-5 space-y-1 marker:text-brand-gold">
+                        <li><strong>Dimensional Control:</strong> Minimizes thermal distortion, making it ideal for delicate wall thicknesses.</li>
+                        <li><strong>Surface Quality:</strong> Delivers crisp extrusions ideal for anodizing and powder coating.</li>
+                    </ul>
+                </div>
+
+                <!-- Section: T6 Temper -->
+                <div class="space-y-3 pt-4">
+                    <h2 class="text-xl font-bold text-brand-navy flex items-center gap-2">
+                        <i data-lucide="shield" class="w-5 h-5 text-brand-gold"></i>
+                        T6 Temper: Maximum Mechanical Strength
+                    </h2>
+                    <p><strong>T6 temper</strong> combines high-temperature solution heat treating, rapid water quenching, and extended artificial aging in specialized precipitation ovens. This forces alloying elements to form microscopic precipitate structures that block dislocation movement inside the metal grid.</p>
+                    <ul class="list-disc pl-5 space-y-1 marker:text-brand-gold">
+                        <li><strong>Peak Performance:</strong> Boosts tensile yield strength up to 50–70% higher than T4/T5 conditions.</li>
+                        <li><strong>Machinability:</strong> Provides clean chip formation during CNC milling and cutting operations.</li>
+                    </ul>
+                </div>
+
+                <!-- Guidance Box -->
+                <div class="bg-brand-navy/5 p-6 rounded-xl border border-brand-navy/10 space-y-3 mt-6">
+                    <h3 class="font-bold text-brand-navy text-lg">Choosing the Right Temper for Your Project</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold mt-1 shrink-0"></i>
+                            <span><strong>Select T4:</strong> If you plan to perform secondary bending, stamping, or cold forming after extrusion.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold mt-1 shrink-0"></i>
+                            <span><strong>Select T5:</strong> For architectural trims, window channels, louvers, and decorative profiles requiring tight tolerances.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold mt-1 shrink-0"></i>
+                            <span><strong>Select T6:</strong> For load-bearing frameworks, structural beams, solar mounting structures, and heavy machinery parts.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-brand-gray/60 flex flex-col sm:flex-row gap-4 justify-between items-center">
+                <a href="blogs.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1 transition">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog Index
+                </a>
+                <a href="contact.html" class="w-full sm:w-auto text-center bg-brand-gold hover:bg-brand-gold/90 text-brand-black font-bold text-xs px-5 py-2.5 rounded-lg shadow-sm transition">
+                    Get Technical Advice
+                </a>
             </div>
         </article>
     </main>
-    <footer class="bg-brand-black text-slate-500 text-xs py-8 text-center">&copy; 2026 Maheshwari Co. All rights reserved.</footer>
+
+     <footer class="bg-brand-black text-slate-500 text-xs py-8 text-center border-t border-slate-800">
+       <p>Copyright&copy; 2026 Maheshwari Co. All rights reserved. | Developed by <a href="https://github.com/AdarshMitr/" target="_blank" class="text-brand-gold hover:underline">AdarshMitr</a></p>
+    </footer>
+
     <script>window.onload = () => lucide.createIcons();</script>
 </body>
 </html>
