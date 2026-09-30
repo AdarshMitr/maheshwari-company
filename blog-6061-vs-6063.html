@@ -7,7 +7,20 @@
     <link rel="icon" type="image/png" href="MCO_logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = { theme: { extend: { colors: { brand: { navy: '#162544', gold: '#F89B1C', black: '#080C14', gray: '#E2E4E6' } } } } }
+        tailwind.config = { 
+            theme: { 
+                extend: { 
+                    colors: { 
+                        brand: { 
+                            navy: '#162544', 
+                            gold: '#F89B1C', 
+                            black: '#080C14', 
+                            gray: '#E2E4E6' 
+                        } 
+                    } 
+                } 
+            } 
+        }
     </script>
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -20,33 +33,141 @@
                 <span class="font-extrabold text-xl text-brand-navy">MAHESHWARI CO.</span>
             </a>
             <div class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="index.html">Home</a><a href="products.html">Products</a><a href="blogs.html" class="text-brand-navy font-bold">Blogs</a><a href="contact.html">Contact</a>
+                <a href="index.html" class="hover:text-brand-gold transition-colors">Home</a>
+                <a href="products.html" class="hover:text-brand-gold transition-colors">Products</a>
+                <a href="blogs.html" class="text-brand-navy font-bold">Blogs</a>
+                <a href="contact.html" class="hover:text-brand-gold transition-colors">Contact</a>
             </div>
         </nav>
     </header>
 
     <main class="flex-grow py-12 max-w-4xl mx-auto px-4 sm:px-8">
-        <a href="blogs.html" class="inline-flex items-center gap-2 text-xs font-bold text-brand-navy hover:text-brand-gold mb-6">
+        <a href="blogs.html" class="inline-flex items-center gap-2 text-xs font-bold text-brand-navy hover:text-brand-gold mb-6 transition-colors">
             <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blogs
         </a>
 
-        <article class="bg-white p-8 sm:p-12 rounded-2xl border border-brand-gray shadow-md space-y-6">
-            <span class="bg-brand-gold/20 text-brand-navy text-xs font-bold px-3 py-1 rounded uppercase">Metallurgy Guide</span>
-            <h1 class="text-3xl font-extrabold text-brand-navy">Understanding 6061 vs 6063 Aluminium Alloys</h1>
-            <p class="text-xs text-slate-400">Published: September 2026 | Reading Time: 6 mins</p>
-
-            <div class="space-y-4 text-slate-700 text-sm leading-relaxed border-t pt-6">
-                <p>When selecting extruded aluminium sections or plates, choosing between <strong>6061</strong> and <strong>6063</strong> depends on whether your project requires high structural load strength (6061-T6) or superior anodized architectural finishes (6063-T5/T6).</p>
+        <article class="bg-white p-8 sm:p-12 rounded-2xl border border-brand-gray shadow-md space-y-8">
+            <div class="space-y-3">
+                <span class="bg-brand-gold/20 text-brand-navy text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">Metallurgy Guide</span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-brand-navy leading-tight">Understanding 6061 vs 6063 Aluminum Alloys: A Guide by Maheshwari Co.</h1>
+                <p class="text-xs text-slate-400">Published: September 2026 | Reading Time: 5 mins</p>
             </div>
 
-            <div class="pt-6 border-t flex justify-between items-center">
-                <a href="blogs.html" class="text-xs font-bold text-brand-navy flex items-center gap-1"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog Index</a>
-                <a href="contact.html" class="bg-brand-gold text-brand-black text-xs font-bold px-4 py-2 rounded-lg">Request Grade Quote</a>
+            <div class="space-y-6 text-slate-700 text-sm leading-relaxed border-t border-brand-gray/50 pt-6">
+                <p>When selecting aluminum alloys for industrial, architectural, or manufacturing projects, <strong>6061</strong> and <strong>6063</strong> stand out as two of the most widely used materials in the 6000-series family. Both feature <strong>magnesium and silicon</strong> as primary alloying elements, offering strong corrosion resistance, excellent weldability, and solid thermal conductivity.</p>
+
+                <p>However, distinct differences in their elemental makeup yield noticeably different structural properties and surface finishes. Selecting the right alloy ensures your project meets mechanical strength requirements without overspending on material or processing costs.</p>
+
+                <!-- Comparison Table -->
+                <div class="my-8 overflow-x-auto rounded-xl border border-brand-gray">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-brand-navy text-white font-semibold">
+                                <th class="p-3 sm:p-4">Feature</th>
+                                <th class="p-3 sm:p-4">6061 Aluminum</th>
+                                <th class="p-3 sm:p-4">6063 Aluminum</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-brand-gray bg-white">
+                            <tr class="hover:bg-brand-gray/20">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy">Primary Focus</td>
+                                <td class="p-3 sm:p-4">Structural Strength &amp; Versatility</td>
+                                <td class="p-3 sm:p-4">Surface Finish &amp; Formability</td>
+                            </tr>
+                            <tr class="hover:bg-brand-gray/20">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy">Tensile Strength (T6)</td>
+                                <td class="p-3 sm:p-4">~310 MPa (High)</td>
+                                <td class="p-3 sm:p-4">~200 MPa (Moderate)</td>
+                            </tr>
+                            <tr class="hover:bg-brand-gray/20">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy">Yield Strength (T6)</td>
+                                <td class="p-3 sm:p-4">~276 MPa</td>
+                                <td class="p-3 sm:p-4">~145 MPa</td>
+                            </tr>
+                            <tr class="hover:bg-brand-gray/20">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy">Anodizing &amp; Finish</td>
+                                <td class="p-3 sm:p-4">Good finish, slightly darker tone</td>
+                                <td class="p-3 sm:p-4">Superior, smooth, highly decorative finish</td>
+                            </tr>
+                            <tr class="hover:bg-brand-gray/20">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy">Machinability</td>
+                                <td class="p-3 sm:p-4">Excellent</td>
+                                <td class="p-3 sm:p-4">Moderate</td>
+                            </tr>
+                            <tr class="hover:bg-brand-gray/20">
+                                <td class="p-3 sm:p-4 font-bold text-brand-navy">Common Shapes</td>
+                                <td class="p-3 sm:p-4">Plates, structural beams, heavy tubing</td>
+                                <td class="p-3 sm:p-4">Custom extrusions, door/window frames, louvers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Section 1 -->
+                <div class="space-y-3 pt-2">
+                    <h2 class="text-xl font-bold text-brand-navy">6061 Aluminum: The Structural Workhorse</h2>
+                    <p><strong>6061</strong> is known as general-purpose structural aluminum. With higher percentages of magnesium, silicon, and added copper, it delivers superior mechanical strength compared to 6063.</p>
+                    <ul class="list-disc pl-5 space-y-2 marker:text-brand-gold">
+                        <li><strong>High Strength-to-Weight Ratio:</strong> Commonly treated to T6 temper (6061-T6), giving it yielding capabilities comparable to structural steel while weighing a fraction of the amount.</li>
+                        <li><strong>Superior Machinability:</strong> Resists gumming during machining, cutting, and drilling operations.</li>
+                        <li><strong>High Structural Integrity:</strong> Holds up well under heavy mechanical load, tension, and impact.</li>
+                    </ul>
+                    <p class="text-xs bg-brand-gray/40 p-3 rounded-lg border-l-4 border-brand-navy mt-2">
+                        <strong>Typical Applications:</strong> At Maheshwari Co., 6061 is highly recommended for load-bearing frameworks, structural beams, machinery components, truck bodies, marine fittings, and industrial pressure vessels.
+                    </p>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="space-y-3 pt-4">
+                    <h2 class="text-xl font-bold text-brand-navy">6063 Aluminum: The Architectural &amp; Extrusion Expert</h2>
+                    <p>Often referred to as <strong>architectural aluminum</strong>, <strong>6063</strong> features a lower alloy content, making it significantly softer and far easier to extrude into complex cross-sections with precise wall thicknesses.</p>
+                    <ul class="list-disc pl-5 space-y-2 marker:text-brand-gold">
+                        <li><strong>Exceptional Surface Finish:</strong> Produces extremely smooth surfaces upon extrusion, ideal for decorative and aesthetic applications.</li>
+                        <li><strong>Anodizing Response:</strong> Takes anodizing, powder coating, and electropolishing better than almost any other alloy, forming a thick, uniform protective layer.</li>
+                        <li><strong>Corrosion Resistance:</strong> Offers high resistance to environmental corrosion, weathering, and moisture exposure.</li>
+                    </ul>
+                    <p class="text-xs bg-brand-gray/40 p-3 rounded-lg border-l-4 border-brand-navy mt-2">
+                        <strong>Typical Applications:</strong> 6063 is the gold standard for window and door frames, architectural cladding, decorative louvers, tubing, heat sinks, and interior design trims.
+                    </p>
+                </div>
+
+                <!-- Decision Section -->
+                <div class="bg-brand-navy text-white p-6 rounded-xl space-y-3 mt-6">
+                    <h3 class="text-lg font-bold text-brand-gold">Which Alloy Should You Choose?</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-200">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0 mt-0.5"></i>
+                            <span><strong>Choose 6061 if:</strong> Your project demands high mechanical strength, structural load capacity, heavy machining, or wear resistance under stress.</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0 mt-0.5"></i>
+                            <span><strong>Choose 6063 if:</strong> Your project prioritizes aesthetic appeal, complex custom extrusions, smooth anodized finishes, and resistance to atmospheric weathering.</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-slate-300 pt-2 border-t border-slate-700">
+                        At <strong>Maheshwari Co.</strong>, we supply premium-grade 6061 and 6063 aluminum sheets, plates, extrusions, and custom profiles tailored to your industrial requirements. Contact our technical support team to get precise material recommendations and competitive quotes for your upcoming project.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Actions -->
+            <div class="pt-6 border-t border-brand-gray flex flex-col sm:flex-row justify-between items-center gap-4">
+                <a href="blogs.html" class="text-xs font-bold text-brand-navy hover:text-brand-gold flex items-center gap-1 transition-colors">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog Index
+                </a>
+                <a href="contact.html" class="w-full sm:w-auto text-center bg-brand-gold text-brand-black hover:bg-brand-gold/90 transition-colors text-xs font-bold px-6 py-2.5 rounded-lg shadow-sm">
+                    Request Grade Quote
+                </a>
             </div>
         </article>
     </main>
 
-    <footer class="bg-brand-black text-slate-500 text-xs py-8 text-center">&copy; 2026 Maheshwari Co. All rights reserved.</footer>
-    <script>window.onload = () => lucide.createIcons();</script>
+    <footer class="bg-brand-black text-slate-500 text-xs py-8 text-center border-t border-slate-800">
+        &copy; 2026 Maheshwari Co. All rights reserved.
+    </footer>
+    
+    <script>
+        window.onload = () => lucide.createIcons();
+    </script>
 </body>
 </html>
