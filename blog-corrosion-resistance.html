@@ -12,24 +12,129 @@
 <body class="bg-brand-gray/30 text-brand-black font-sans antialiased flex flex-col min-h-screen">
     <header class="w-full bg-white border-b border-brand-gray shadow-sm">
         <nav class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
-            <a href="index.html" class="font-extrabold text-xl text-brand-navy">MAHESHWARI CO.</a>
-            <div class="hidden md:flex space-x-6 text-sm font-medium"><a href="index.html">Home</a><a href="products.html">Products</a><a href="blogs.html" class="text-brand-navy font-bold">Blogs</a><a href="contact.html">Contact</a></div>
+            <a href="index.html" class="flex items-center gap-3 font-extrabold text-xl text-brand-navy">
+                <img src="MCO_logo.png" alt="Maheshwari Co. Logo" class="h-10 w-auto object-contain">
+                <span>MAHESHWARI CO.</span>
+            </a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="blogs.html" class="text-brand-navy font-bold">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
     </header>
+
     <main class="flex-grow py-12 max-w-4xl mx-auto px-4 sm:px-8">
-        <a href="blogs.html" class="inline-flex items-center gap-2 text-xs font-bold text-brand-navy hover:text-brand-gold mb-6"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blogs</a>
+        <a href="blogs.html" class="inline-flex items-center gap-2 text-xs font-bold text-brand-navy hover:text-brand-gold mb-6">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blogs
+        </a>
         <article class="bg-white p-8 sm:p-12 rounded-2xl border border-brand-gray shadow-md space-y-6">
             <span class="bg-purple-50 text-purple-800 text-xs font-bold px-3 py-1 rounded uppercase">Marine & Industrial</span>
             <h1 class="text-3xl font-extrabold text-brand-navy">Selecting Marine-Grade Aluminium Alloys (5083 & 5052)</h1>
             <p class="text-xs text-slate-400">Published: May 2026 | Reading Time: 5 mins</p>
-            <p class="text-slate-700 text-sm border-t pt-6">How magnesium alloying improves resistance against saltwater corrosion and prevents stress-pitting in marine environments.</p>
+
+            <p class="text-slate-700 text-base leading-relaxed border-t pt-6 font-medium">
+                When designing structures destined for aggressive marine environments, material selection is critical. Aluminium non-heat-treatable 5xxx series alloys stand out due to their exceptional combination of corrosion resistance, weldability, and structural strength. Among these, Aluminium 5052 and 5083 represent the premier choices for maritime and off-shore applications.
+            </p>
+
+            <div class="space-y-6 text-slate-700 text-sm leading-relaxed border-t border-slate-100 pt-6">
+                <section>
+                    <h2 class="text-xl font-bold text-brand-navy mb-3">The Role of Magnesium in Saltwater Resistance</h2>
+                    <p class="mb-3">
+                        The primary alloying element in the 5xxx series is magnesium (Mg). When exposed to oxygen, aluminium naturally forms a thin, protective surface layer of aluminium oxide (Al<sub>2</sub>O<sub>3</sub>). However, in saline environments containing chloride ions, standard oxide films break down, causing pitting corrosion.
+                    </p>
+                    <p>
+                        Magnesium alloying radically enhances this passive layer. It modifies the oxide chemistry to prevent chloride ion penetration, preventing localized pitting and stress-corrosion cracking (SCC) even under full immersion or salt-spray exposure.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-navy mb-3">Alloy Comparison: AA 5052 vs. AA 5083</h2>
+                    
+                    <div class="my-4">
+                        <h3 class="text-base font-semibold text-brand-navy mb-1">Aluminium 5052 (2.2% - 2.8% Mg)</h3>
+                        <p class="mb-2">
+                            Aluminium 5052 is a versatile medium-to-high strength alloy known for its superb formability and drawability. It offers excellent resistance to marine atmospheres and saltwater spray.
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs">
+                            <li><strong>Best used for:</strong> Small boat hulls, fuel tanks, hydraulic tubing, radar enclosures, and marine cabin sheet work.</li>
+                            <li><strong>Key Advantage:</strong> Exceptional cold-workability and bendability without cracking.</li>
+                        </ul>
+                    </div>
+
+                    <div class="my-4">
+                        <h3 class="text-base font-semibold text-brand-navy mb-1">Aluminium 5083 (4.0% - 4.9% Mg)</h3>
+                        <p class="mb-2">
+                            Aluminium 5083 is the highest-strength non-heat-treatable commercial aluminium alloy. Containing a higher concentration of magnesium along with traces of manganese, 5083 provides exceptional yield strength and structural toughness after welding.
+                        </p>
+                        <ul class="list-disc pl-5 space-y-1 text-xs">
+                            <li><strong>Best used for:</strong> Large ship hulls, yacht superstructures, offshore rig platforms, pressure vessels, and armor plating.</li>
+                            <li><strong>Key Advantage:</strong> Unmatched joint efficiency and strength retention in welded condition.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-navy mb-3">Mechanical & Physical Specification Summary</h2>
+                    <div class="overflow-x-auto my-4">
+                        <table class="w-full text-left text-xs border border-brand-gray rounded-lg overflow-hidden">
+                            <thead class="bg-brand-navy text-white">
+                                <tr>
+                                    <th class="p-3">Property</th>
+                                    <th class="p-3">Alloy 5052-H32</th>
+                                    <th class="p-3">Alloy 5083-H111 / H116</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-brand-gray">
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">Tensile Strength (MPa)</td>
+                                    <td class="p-3">210 – 260</td>
+                                    <td class="p-3">275 – 350</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">Yield Strength (MPa)</td>
+                                    <td class="p-3">130 – 180</td>
+                                    <td class="p-3">125 – 200</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">Weldability</td>
+                                    <td class="p-3">Excellent</td>
+                                    <td class="p-3">Excellent (High joint efficiency)</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-semibold">Saltwater Resistance</td>
+                                    <td class="p-3">Very High</td>
+                                    <td class="p-3">Outstanding (Extreme Marine)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-brand-navy mb-3">Conclusion: How to Choose</h2>
+                    <p>
+                        If your design requires tight-radius bends, deep drawing, or moderate structural loading (such as interior fittings, tanks, and light craft components), <strong>5052</strong> delivers optimal cost-performance and ease of fabrication. For heavily loaded structural members, large vessels, submerged hulls, and critical offshore installations where maximum weld strength is paramount, <strong>5083</strong> is the industry standard.
+                    </p>
+                </section>
+            </div>
+
             <div class="pt-6 border-t flex justify-between items-center">
-                <a href="blogs.html" class="text-xs font-bold text-brand-navy flex items-center gap-1"><i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog Index</a>
-                <a href="contact.html" class="bg-brand-gold text-brand-black text-xs font-bold px-4 py-2 rounded-lg">Request Marine Sheet</a>
+                <a href="blogs.html" class="text-xs font-bold text-brand-navy flex items-center gap-1">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Blog Index
+                </a>
+                <a href="contact.html" class="bg-brand-gold text-brand-black text-xs font-bold px-4 py-2 rounded-lg hover:opacity-90">
+                    Request Marine Sheet
+                </a>
             </div>
         </article>
     </main>
-    <footer class="bg-brand-black text-slate-500 text-xs py-8 text-center">&copy; 2026 Maheshwari Co. All rights reserved.</footer>
+
+    <footer class="bg-brand-black text-slate-500 text-xs py-8 text-center">
+       <p>Copyright&copy; 2026 Maheshwari Co. All rights reserved. | Developed by <a href="https://github.com/AdarshMitr/" target="_blank" class="text-brand-gold hover:underline">AdarshMitr</a></p>
+    </footer>
+
     <script>window.onload = () => lucide.createIcons();</script>
 </body>
 </html>
