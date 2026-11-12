@@ -14,7 +14,7 @@ class CustomHeader extends HTMLElement {
 
         <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-                <a href="index.html" class="flex items-center gap-3">
+                <a href="/" class="flex items-center gap-3">
                     <div class="w-10 h-10 bg-brand-700 text-white flex items-center justify-center rounded-lg font-bold text-xl tracking-wider">
                         MC
                     </div>
@@ -25,7 +25,7 @@ class CustomHeader extends HTMLElement {
                 </a>
 
                 <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600 text-sm">
-                    <a href="index.html" class="hover:text-brand-800 transition">Home</a>
+                    <a href="/" class="hover:text-brand-800 transition">Home</a>
                     <a href="about.html" class="hover:text-brand-800 transition">About Us</a>
                     <a href="products.html" class="hover:text-brand-800 transition">Products</a>
                     <a href="catalogues.html" class="hover:text-brand-800 transition font-semibold text-brand-800">PDF Catalogues</a>
@@ -45,7 +45,7 @@ class CustomHeader extends HTMLElement {
             </div>
 
             <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 py-4 space-y-3">
-                <a href="index.html" class="block text-slate-600 hover:text-brand-800 font-medium py-1">Home</a>
+                <a href="/" class="block text-slate-600 hover:text-brand-800 font-medium py-1">Home</a>
                 <a href="about.html" class="block text-slate-600 hover:text-brand-800 font-medium py-1">About Us</a>
                 <a href="products.html" class="block text-slate-600 hover:text-brand-800 font-medium py-1">Products</a>
                 <a href="catalogues.html" class="block text-slate-600 hover:text-brand-800 font-medium py-1 font-semibold text-brand-800">PDF Catalogues</a>
